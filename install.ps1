@@ -153,9 +153,7 @@ New-Item -ItemType Directory -Force -Path $WorkspaceDir | Out-Null
 Write-Success "Created $ConfigDir (config)"
 Write-Success "Created $WorkspaceDir (workspace)"
 
-Write-Step "Pulling OpenClaw image..."
-docker pull $Image
-Write-Success "Image pulled successfully!"
+
 
 # Onboarding
 if (-not $SkipOnboard) {
