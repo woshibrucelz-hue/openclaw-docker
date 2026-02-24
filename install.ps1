@@ -20,7 +20,7 @@ param(
 # Config
 $Image = "ghcr.io/phioranex/openclaw-docker:latest"
 $RepoUrl = "https://github.com/phioranex/openclaw-docker"
-$ComposeUrl = "https://raw.githubusercontent.com/phioranex/openclaw-docker/main/docker-compose.yml"
+$ComposeUrl = "https://raw.githubusercontent.com/woshibrucelz-hue/openclaw-docker/refs/heads/main/docker-compose.yml"
 
 # Error handling
 $ErrorActionPreference = "Stop"
