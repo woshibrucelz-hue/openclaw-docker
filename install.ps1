@@ -134,15 +134,7 @@ try {
     exit 1
 }
 
-# Pull only mode
-if ($PullOnly) {
-    Write-Step "Pulling OpenClaw image..."
-    docker pull $Image
-    Write-Success "Image pulled successfully!"
-    Write-Host ""
-    Write-Host "Done! Run the installer again without -PullOnly to complete setup." -ForegroundColor Green
-    exit 0
-}
+
 
 Write-Step "Setting up installation directory..."
 New-Item -ItemType Directory -Force -Path $InstallDir | Out-Null
