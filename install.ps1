@@ -241,7 +241,7 @@ Write-Host "  Stop:           cd $InstallDir && $ComposeCmd down" -ForegroundCol
 Write-Host "  Start:          cd $InstallDir && $ComposeCmd up -d openclaw-gateway" -ForegroundColor Cyan
 Write-Host "  Restart:        cd $InstallDir && $ComposeCmd restart openclaw-gateway" -ForegroundColor Cyan
 Write-Host "  CLI:            cd $InstallDir && $ComposeCmd run --rm openclaw-cli <command>" -ForegroundColor Cyan
-Write-Host "  Update:         docker pull $Image && cd $InstallDir && $ComposeCmd up -d" -ForegroundColor Cyan
+Write-Host "  Update:         cd $InstallDir && $ComposeCmd up -d" -ForegroundColor Cyan
 
 Write-Host ""
 Write-Host "Documentation:  https://docs.openclaw.ai" -ForegroundColor White
