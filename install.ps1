@@ -8,7 +8,7 @@
 # Or with options:
 #   & ([scriptblock]::Create((irm https://raw.githubusercontent.com/phioranex/openclaw-docker/main/install.ps1))) -NoStart
 #
-
+ 
 param(
     [string]$InstallDir = "$env:USERPROFILE\openclaw",
     [switch]$NoStart,
